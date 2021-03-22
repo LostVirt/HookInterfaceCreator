@@ -1,7 +1,32 @@
 package api.utilities.internal;
 
 
-public interface RSClient extends bt {
+public interface RSClient extends RSGameShell {
+    Thread getGameThread();
+    int getMouseX();
+    int getMouseY();
+    void sendKeyEventPressed(KeyEvent keyEvent);
+    void sendKeyEventTyped(KeyEvent keyEvent);
+    void sendKeyEventReleased(KeyEvent keyEvent);
+    void sendMouseEventPressed(MouseEvent mouseEvent);
+    void sendMouseEventReleased(MouseEvent mouseEvent);
+    void sendMouseEventMoved(MouseEvent mouseEvent);
+    void setAction(RSMenuAction menuAction);
+    void setDisableAll(boolean bool);
+    RSInventory getItemContainer(long tableID);
+    int getVarbit(int index);
+    void login(String username, String password);
+    void setWorld(int id);
+    boolean loadWorlds();
+    void setWorldSelect(boolean bool);
+    boolean getWorldSelect();
+    void addMessage(int type, String sender, String text, String prefix);
+    void doAction(int secondary, int tertiary, int opcode, int primary, String menuOption, String menuTarget, int mouseX, int mouseY, int trash);
+    RSObjType getItemDefinition(int itemID);
+    RSComponent getMeSlayerContinueWidget();
+    void setScene_selectedX(int x);
+    void setScene_selectedY(int y);
+    void setViewportWalking();
     int getAbstractFont_alpha();
     int getAbstractFont_color();
     int getAbstractFont_justificationCurrent();

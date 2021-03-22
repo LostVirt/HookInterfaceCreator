@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSAbstractFont extends lo {
+public interface RSAbstractFont extends RSRasterizer2D {
     int[] getAdvances();
     int getAscent();
     int[] getHeights();

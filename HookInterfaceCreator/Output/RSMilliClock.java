@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSMilliClock extends fm {
+public interface RSMilliClock extends RSClock {
     int get__d();
     int get__h();
     int get__v();

@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSMidiPcmStream extends dw {
+public interface RSMidiPcmStream extends RSPcmStream {
     RSMidiFileReader getMidiFile();
     RSNodeHashTable getMusicPatches();
     RSMusicPatchPcmStream getPatchStream();

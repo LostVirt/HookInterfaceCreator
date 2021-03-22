@@ -1,6 +1,6 @@
 package api.utilities.internal;
 
 
-public interface RSNanoClock extends fm {
+public interface RSNanoClock extends RSClock {
     long getLastTimeNano();
 }

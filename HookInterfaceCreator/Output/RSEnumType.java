@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSEnumType extends gj {
+public interface RSEnumType extends RSDualNode {
     int getDefaultint();
     String getDefaultstr();
     char getInputtype();

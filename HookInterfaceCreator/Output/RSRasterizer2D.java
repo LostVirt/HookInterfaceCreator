@@ -1,5 +1,5 @@
 package api.utilities.internal;
 
 
-public interface RSRasterizer2D extends gj {
+public interface RSRasterizer2D extends RSDualNode {
 }

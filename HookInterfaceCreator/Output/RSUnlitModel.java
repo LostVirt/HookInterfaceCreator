@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSUnlitModel extends em {
+public interface RSUnlitModel extends RSEntity {
     byte[] getFaceAlphas();
     short[] getFaceColors();
     int getFaceCount();

@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSSprite extends lo {
+public interface RSSprite extends RSRasterizer2D {
     int getHeight();
     int[] getPixels();
     int getSubHeight();

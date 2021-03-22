@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSArchive extends ig {
+public interface RSArchive extends RSAbstractArchive {
     RSArchiveDisk getArchiveDisk();
     int getIndex();
     int getIndexCrc();

@@ -59,13 +59,10 @@ namespace HookInterfaceCreator.Utilities
 
         public static string StripDescriptorType(string descriptor)
         {
-            string tempDescriptor = descriptor;
-            if (descriptor.Contains(";"))
-            {
-                tempDescriptor = descriptor.Substring(1);
-                tempDescriptor = tempDescriptor.Substring(0, tempDescriptor.Length - 1);
-            }
-            return tempDescriptor;
+            if (!descriptor.Contains(";")) return descriptor;
+
+            descriptor = descriptor.Substring(1);
+            return descriptor.Substring(0, descriptor.Length - 1);
         }
 
         public static string StripArray(string descriptor)

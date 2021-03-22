@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSTexture extends ga {
+public interface RSTexture extends RSNode {
     int getAnimationDirection();
     int getAnimationSpeed();
     int[] getFiles();

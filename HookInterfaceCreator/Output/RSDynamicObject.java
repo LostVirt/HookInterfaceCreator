@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSDynamicObject extends em {
+public interface RSDynamicObject extends RSEntity {
     int getCycleStart();
     int getFrame();
     int getId();

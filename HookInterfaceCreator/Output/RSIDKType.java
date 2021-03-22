@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSIDKType extends gj {
+public interface RSIDKType extends RSDualNode {
     int getBodyPart();
     int[] getHead();
     int[] getModels();

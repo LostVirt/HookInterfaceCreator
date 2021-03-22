@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSIndexedSprite extends lo {
+public interface RSIndexedSprite extends RSRasterizer2D {
     int getHeight();
     int[] getPalette();
     byte[] getPixels();

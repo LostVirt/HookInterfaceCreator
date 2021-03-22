@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSMapElementType extends gj {
+public interface RSMapElementType extends RSDualNode {
     int getCategory();
     String[] getIop();
     String getLabel();

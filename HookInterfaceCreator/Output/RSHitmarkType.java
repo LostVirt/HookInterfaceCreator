@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSHitmarkType extends gj {
+public interface RSHitmarkType extends RSDualNode {
     int getFontId();
     String getFormat();
     int getTransformVarbit();

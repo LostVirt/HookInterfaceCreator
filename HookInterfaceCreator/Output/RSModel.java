@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSModel extends em {
+public interface RSModel extends RSEntity {
     int getBottomY();
     int getBoundsType();
     int getDiameter();

@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSRawPcmStream extends dw {
+public interface RSRawPcmStream extends RSPcmStream {
     int getEnd();
     int getStart();
     boolean get__s();

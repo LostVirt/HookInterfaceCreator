@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSHeadbarType extends gj {
+public interface RSHeadbarType extends RSDualNode {
     int getInt1();
     int getInt2();
     int getInt3();

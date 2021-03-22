@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSNetFileRequest extends gj {
+public interface RSNetFileRequest extends RSDualNode {
     RSArchive getArchive();
     int getCrc();
     byte getPadding();

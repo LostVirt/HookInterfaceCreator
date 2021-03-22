@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSLocSound extends ga {
+public interface RSLocSound extends RSNode {
     RSLocType getObj();
     int getSoundEffectId();
     int[] getSoundEffectIds();

@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSSpriteMask extends gj {
+public interface RSSpriteMask extends RSDualNode {
     int getHeight();
     int getWidth();
     int[] getXStarts();

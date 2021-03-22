@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSObjType extends gj {
+public interface RSObjType extends RSDualNode {
     int getAmbient();
     int getBoughtlink();
     int getBoughttemplate();

@@ -1,6 +1,6 @@
 package api.utilities.internal;
 
 
-public interface RSIntegerNode extends ga {
+public interface RSIntegerNode extends RSNode {
     int getInteger();
 }

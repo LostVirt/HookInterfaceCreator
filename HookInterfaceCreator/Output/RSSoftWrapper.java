@@ -1,6 +1,6 @@
 package api.utilities.internal;
 
 
-public interface RSSoftWrapper extends fa {
+public interface RSSoftWrapper extends RSWrapper {
     SoftReference getRef();
 }

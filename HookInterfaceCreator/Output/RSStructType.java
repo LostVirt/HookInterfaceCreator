@@ -1,6 +1,6 @@
 package api.utilities.internal;
 
 
-public interface RSStructType extends gj {
+public interface RSStructType extends RSDualNode {
     RSIterableNodeHashTable getParams();
 }

@@ -1,6 +1,6 @@
 package api.utilities.internal;
 
 
-public interface RSByteArrayNode extends ga {
+public interface RSByteArrayNode extends RSNode {
     byte[] getByteArray();
 }

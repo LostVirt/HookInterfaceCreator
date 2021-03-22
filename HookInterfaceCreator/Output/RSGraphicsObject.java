@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSGraphicsObject extends em {
+public interface RSGraphicsObject extends RSEntity {
     int getCycleStart();
     int getFrame();
     int getFrameCycle();

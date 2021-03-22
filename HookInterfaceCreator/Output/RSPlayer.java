@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSPlayer extends cv {
+public interface RSPlayer extends RSActor {
     String[] getActions();
     int getAnimationCycleEnd();
     int getAnimationCycleStart();

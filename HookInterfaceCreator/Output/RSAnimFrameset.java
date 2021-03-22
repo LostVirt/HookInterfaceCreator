@@ -1,6 +1,6 @@
 package api.utilities.internal;
 
 
-public interface RSAnimFrameset extends gj {
+public interface RSAnimFrameset extends RSDualNode {
     RSAnimFrame[] getFrames();
 }

@@ -1,5 +1,5 @@
 package api.utilities.internal;
 
 
-public interface RSFont extends ks {
+public interface RSFont extends RSAbstractFont {
 }

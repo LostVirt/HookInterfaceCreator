@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSProjectile extends em {
+public interface RSProjectile extends RSEntity {
     double getAccelerationZ();
     int getCycleEnd();
     int getCycleStart();

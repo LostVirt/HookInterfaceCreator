@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSFloorOverlayType extends gj {
+public interface RSFloorOverlayType extends RSDualNode {
     int getHue();
     int getHue2();
     int getLightness();

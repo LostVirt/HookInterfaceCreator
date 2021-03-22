@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSWorldMapIcon2 extends aj {
+public interface RSWorldMapIcon2 extends RSAbstractWorldMapIcon {
     RSWorldMapLabel getLabel0();
     int get__d();
     int get__h();

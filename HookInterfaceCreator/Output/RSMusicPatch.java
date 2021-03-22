@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSMusicPatch extends ga {
+public interface RSMusicPatch extends RSNode {
     RSRawSound[] getRawSounds();
     byte[] get__c();
     byte[] get__y();

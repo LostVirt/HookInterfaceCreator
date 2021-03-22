@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSSpotType extends gj {
+public interface RSSpotType extends RSDualNode {
     int getAmbient();
     int getContrast();
     int getId();

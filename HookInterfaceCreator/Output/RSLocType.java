@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSLocType extends gj {
+public interface RSLocType extends RSDualNode {
     int getAmbient();
     int getAmbientSoundId();
     int getAnimationId();

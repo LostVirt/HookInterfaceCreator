@@ -30,12 +30,9 @@ namespace HookInterfaceCreator.Creator
         {
             DeleteFiles();
 
-            int i = 0;
             foreach (var interfaces in Json.Parents)
             {
                 CreateFile(interfaces, "RS" + interfaces.Clazz);
-                //if (i >= ) break;
-                //i++;
             }
         }
 
@@ -50,13 +47,18 @@ namespace HookInterfaceCreator.Creator
 
                 if (!parent.SuperClass.Equals("java.lang.Object"))
                 {
-                    file.WriteLine($"public interface {name} extends {parent.SuperClass.Split('.').Last()} {{");
+                    file.WriteLine($"public interface {name} extends {FindInterface(parent.SuperClass.Split('.').Last())} {{");
                 }
                 else
                 {
                     file.WriteLine($"public interface {name} {{");
                 }
 
+                if (parent.Clazz.Equals("Client"))
+                {
+                    AddExtraClientFields(file);
+                }
+                     
                 if (parent.Fields != null)
                 {
                     foreach (Fields field in parent.Fields)
@@ -85,6 +87,36 @@ namespace HookInterfaceCreator.Creator
                 file.WriteLine("}");
             }
             Console.WriteLine($"Done Creating Interface: {name}");
+        }
+
+        private void AddExtraClientFields(StreamWriter file)
+        {
+            string whiteSpace = "    ";
+            file.WriteLine(whiteSpace + "Thread getGameThread();");
+            file.WriteLine(whiteSpace + "int getMouseX();");
+            file.WriteLine(whiteSpace + "int getMouseY();");
+            file.WriteLine(whiteSpace + "void sendKeyEventPressed(KeyEvent keyEvent);");
+            file.WriteLine(whiteSpace + "void sendKeyEventTyped(KeyEvent keyEvent);");
+            file.WriteLine(whiteSpace + "void sendKeyEventReleased(KeyEvent keyEvent);");
+            file.WriteLine(whiteSpace + "void sendMouseEventPressed(MouseEvent mouseEvent);");
+            file.WriteLine(whiteSpace + "void sendMouseEventReleased(MouseEvent mouseEvent);");
+            file.WriteLine(whiteSpace + "void sendMouseEventMoved(MouseEvent mouseEvent);");
+            file.WriteLine(whiteSpace + "void setAction(RSMenuAction menuAction);");
+            file.WriteLine(whiteSpace + "void setDisableAll(boolean bool);");
+            file.WriteLine(whiteSpace + "RSInventory getItemContainer(long tableID);");
+            file.WriteLine(whiteSpace + "int getVarbit(int index);");
+            file.WriteLine(whiteSpace + "void login(String username, String password);");
+            file.WriteLine(whiteSpace + "void setWorld(int id);");
+            file.WriteLine(whiteSpace + "boolean loadWorlds();");
+            file.WriteLine(whiteSpace + "void setWorldSelect(boolean bool);");
+            file.WriteLine(whiteSpace + "boolean getWorldSelect();");
+            file.WriteLine(whiteSpace + "void addMessage(int type, String sender, String text, String prefix);");
+            file.WriteLine(whiteSpace + "void doAction(int secondary, int tertiary, int opcode, int primary, String menuOption, String menuTarget, int mouseX, int mouseY, int trash);");
+            file.WriteLine(whiteSpace + "RSObjType getItemDefinition(int itemID);");
+            file.WriteLine(whiteSpace + "RSComponent getMeSlayerContinueWidget();");
+            file.WriteLine(whiteSpace + "void setScene_selectedX(int x);");
+            file.WriteLine(whiteSpace + "void setScene_selectedY(int y);");
+            file.WriteLine(whiteSpace + "void setViewportWalking();");
         }
 
         private void DeleteFiles()

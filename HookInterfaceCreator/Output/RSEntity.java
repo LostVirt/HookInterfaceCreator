@@ -1,6 +1,6 @@
 package api.utilities.internal;
 
 
-public interface RSEntity extends gj {
+public interface RSEntity extends RSDualNode {
     int getHeight();
 }

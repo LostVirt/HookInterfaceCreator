@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSNPCType extends gj {
+public interface RSNPCType extends RSDualNode {
     int getAmbient();
     int getCombatLevel();
     int getContrast();

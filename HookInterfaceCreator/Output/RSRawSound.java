@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSRawSound extends dn {
+public interface RSRawSound extends RSAbstractSound {
     int getEnd();
     int getSampleRate();
     byte[] getSamples();

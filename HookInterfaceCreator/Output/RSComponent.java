@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSComponent extends ga {
+public interface RSComponent extends RSNode {
     String getButtonText();
     int getButtonType();
     int getChildIndex();

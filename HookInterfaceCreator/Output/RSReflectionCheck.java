@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSReflectionCheck extends ga {
+public interface RSReflectionCheck extends RSNode {
     byte[][][] getArguments();
     int[] getCreationErrors();
     Field[] getFields();

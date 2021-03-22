@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSSeqType extends gj {
+public interface RSSeqType extends RSDualNode {
     int getFrameCount();
     int[] getFrameIds();
     int[] getFrameIds2();

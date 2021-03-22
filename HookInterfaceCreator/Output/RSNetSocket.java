@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSNetSocket extends ls {
+public interface RSNetSocket extends RSAbstractSocket {
     byte[] getArray();
     boolean getExceptionWriting();
     InputStream getInputStream();

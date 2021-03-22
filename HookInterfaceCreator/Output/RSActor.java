@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSActor extends em {
+public interface RSActor extends RSEntity {
     int getDefaultHeight();
     boolean getFalse0();
     RSIterableNodeDeque getHeadbars();

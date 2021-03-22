@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSClientScriptEvent extends ga {
+public interface RSClientScriptEvent extends RSNode {
     Object[] getArgs0();
     boolean getBoolean1();
     RSComponent getComponent();

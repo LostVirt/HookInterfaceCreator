@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSMessage extends gj {
+public interface RSMessage extends RSDualNode {
     int getCount();
     int getCycle();
     RSTriBool getIsFromFriend0();

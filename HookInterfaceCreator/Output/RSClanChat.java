@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSClanChat extends ku {
+public interface RSClanChat extends RSUserList {
     RSUsernamed getLocalUser();
     RSLoginType getLoginType();
     byte getMinKick();

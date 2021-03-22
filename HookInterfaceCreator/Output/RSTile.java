@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSTile extends ga {
+public interface RSTile extends RSNode {
     boolean getDrawPrimary();
     boolean getDrawScenery();
     int getDrawSceneryEdges();

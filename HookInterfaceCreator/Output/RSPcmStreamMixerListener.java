@@ -1,6 +1,6 @@
 package api.utilities.internal;
 
 
-public interface RSPcmStreamMixerListener extends ga {
+public interface RSPcmStreamMixerListener extends RSNode {
     int get__n();
 }

@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSPlatformInfo extends ga {
+public interface RSPlatformInfo extends RSNode {
     boolean get__ak();
     boolean get__aw();
     int get__aa();

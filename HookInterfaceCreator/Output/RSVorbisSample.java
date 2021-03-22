@@ -1,7 +1,7 @@
 package api.utilities.internal;
 
 
-public interface RSVorbisSample extends ga {
+public interface RSVorbisSample extends RSNode {
     byte[][] getAudioBlocks();
     int getEnd();
     int getSampleCount();
