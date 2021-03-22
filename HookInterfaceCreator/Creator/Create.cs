@@ -1,4 +1,4 @@
-﻿using HookInterfaceCreator.Deserialized;
+﻿using HookInterfaceCreator.Deserialization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +20,11 @@ namespace HookInterfaceCreator.Creator
             Json = json;
         }
 
-        public void CreateFile(string name)
+        public void Execute()
+        {
+            
+        }
+        private void CreateFile(string name)
         {
 
         }

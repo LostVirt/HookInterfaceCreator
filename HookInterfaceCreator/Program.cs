@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Configuration;
+using HookInterfaceCreator.Creator;
+using System.Collections.Specialized;
 
 namespace HookInterfaceCreator
 {
@@ -10,10 +12,12 @@ namespace HookInterfaceCreator
     {
         static void Main(string[] args)
         {
-            JsonParser ParsedJson = new JsonParser(ConfigurationManager.AppSettings.Get("JsonPath"));
+            NameValueCollection config = ConfigurationManager.AppSettings;
 
+            JsonParser ParsedJson = new JsonParser(config.Get("JsonPath"));
 
-            
+            Create create = new Create(config.Get("Output"), config.Get("Package"), ParsedJson);
+            create.Execute();
         }
     }
 }
