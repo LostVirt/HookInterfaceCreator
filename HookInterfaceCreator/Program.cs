@@ -1,9 +1,8 @@
-﻿using HookInterfaceCreator.Deserialized;
+﻿using HookInterfaceCreator.Deserialization;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Configuration;
-using System.Collections.Specialized;
 
 namespace HookInterfaceCreator
 {

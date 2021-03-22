@@ -1,4 +1,4 @@
-﻿using HookInterfaceCreator.Deserialized.Children;
+﻿using HookInterfaceCreator.Deserialization.Children;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HookInterfaceCreator.Deserialized
+namespace HookInterfaceCreator.Deserialization
 {
     class JsonParser
     {

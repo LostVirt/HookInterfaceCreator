@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HookInterfaceCreator.Deserialized.Children
+namespace HookInterfaceCreator.Deserialization.Children
 {
     class Constructor
     {

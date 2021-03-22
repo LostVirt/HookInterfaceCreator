@@ -1,11 +1,11 @@
-﻿using HookInterfaceCreator.Deserialized.Children;
+﻿using HookInterfaceCreator.Deserialization.Children;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HookInterfaceCreator.Deserialized
+namespace HookInterfaceCreator.Deserialization
 {
     class Parent
     {
