@@ -57,6 +57,12 @@ namespace HookInterfaceCreator.Creator
                 if (parent.Clazz.Equals("Client"))
                 {
                     AddExtraClientFields(file);
+                    file.WriteLine("");
+                } 
+                else if (parent.Clazz.Equals("Scene"))
+                {
+                    AddExtraSceneFields(file);
+                    file.WriteLine("");
                 }
                      
                 if (parent.Fields != null)
@@ -117,6 +123,14 @@ namespace HookInterfaceCreator.Creator
             file.WriteLine(whiteSpace + "void setScene_selectedX(int x);");
             file.WriteLine(whiteSpace + "void setScene_selectedY(int y);");
             file.WriteLine(whiteSpace + "void setViewportWalking();");
+        }
+
+        private void AddExtraSceneFields(StreamWriter file)
+        {
+            string whiteSpace = "    ";
+            file.WriteLine(whiteSpace + "void setDestinationX(int var1);");
+            file.WriteLine(whiteSpace + "void setDestinationY(int var1);");
+            file.WriteLine(whiteSpace + "void setWalking();");
         }
 
         private void DeleteFiles()

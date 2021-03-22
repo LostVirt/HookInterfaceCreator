@@ -2,6 +2,10 @@ package api.utilities.internal;
 
 
 public interface RSScene {
+    void setDestinationX(int var1);
+    void setDestinationY(int var1);
+    void setWalking();
+
     int getMinPlane();
     int getPlanes();
     RSScenery[] getTempScenery();

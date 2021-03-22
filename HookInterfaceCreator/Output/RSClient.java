@@ -27,6 +27,7 @@ public interface RSClient extends RSGameShell {
     void setScene_selectedX(int x);
     void setScene_selectedY(int y);
     void setViewportWalking();
+
     int getAbstractFont_alpha();
     int getAbstractFont_color();
     int getAbstractFont_justificationCurrent();
