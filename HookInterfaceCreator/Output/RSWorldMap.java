@@ -1,0 +1,58 @@
+package api.utilities.internal;
+
+
+public interface RSWorldMap {
+    RSWorldMapArchiveLoader getCacheLoader();
+    RSWorldMapArea getCurrentMapArea0();
+    boolean getElementsDisabled();
+    HashSet getEnabledCategories();
+    HashSet getEnabledElements();
+    HashSet getFlashingElements();
+    RSFont getFont();
+    HashMap getFonts();
+    Iterator getIconIterator();
+    RSWorldMapArea getMainMapArea();
+    HashMap getMapAreas();
+    RSIndexedSprite[] getMapSceneSprites();
+    RSCoord getMouseCoord();
+    boolean getPerpetualFlash0();
+    RSSprite getSprite();
+    RSWorldMapManager getWorldMapManager();
+    float getZoom();
+    float getZoomTarget();
+    RSWorldMapArea get__g();
+    boolean get__an();
+    RSAbstractArchive get__e();
+    RSAbstractArchive get__q();
+    RSAbstractArchive get__z();
+    int get__aa();
+    int get__ac();
+    int get__ae();
+    int get__ag();
+    int get__aj();
+    int get__al();
+    int get__am();
+    int get__ap();
+    int get__aq();
+    int get__ar();
+    int get__as();
+    int get__at();
+    int get__aw();
+    int get__az();
+    int get__bh();
+    int get__bj();
+    int get__bl();
+    int get__bt();
+    int get__bv();
+    int get__m();
+    int get__o();
+    int get__p();
+    int get__r();
+    HashSet get__af();
+    HashSet get__av();
+    HashSet get__bq();
+    List get__bp();
+    long get__ah();
+    int[] get__bi();
+    boolean get__bc();
+}

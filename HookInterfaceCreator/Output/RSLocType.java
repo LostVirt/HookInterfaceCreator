@@ -1,0 +1,49 @@
+package api.utilities.internal;
+
+
+public interface RSLocType extends gj {
+    int getAmbient();
+    int getAmbientSoundId();
+    int getAnimationId();
+    boolean getBoolean1();
+    boolean getClipped();
+    int getContrast();
+    int getHillChange();
+    int getId();
+    int getInt2();
+    int getInt3();
+    int getInt4();
+    int getInt5();
+    int getInt6();
+    int getInteractType();
+    int getInteractable();
+    boolean getIsRotated();
+    boolean getIsSolid();
+    int getLength();
+    boolean getLowDetailVisible();
+    int getMapIconId();
+    int getMapSceneId();
+    int[] getModelTypes();
+    int[] getModels();
+    int[] getMulti();
+    int getMultiVar();
+    int getMultiVarbit();
+    String getName();
+    boolean getOcclude();
+    int getOffsetX();
+    int getOffsetY();
+    int getOffsetZ();
+    String[] getOp();
+    RSIterableNodeHashTable getParams();
+    short[] getRecol_d();
+    short[] getRecol_s();
+    int getResizeX();
+    int getResizeY();
+    int getResizeZ();
+    short[] getRetex_d();
+    short[] getRetex_s();
+    boolean getSharelight();
+    int getWidth();
+    boolean get__av();
+    int[] get__af();
+}

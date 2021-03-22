@@ -1,0 +1,52 @@
+package api.utilities.internal;
+
+
+public interface RSObjType extends gj {
+    int getAmbient();
+    int getBoughtlink();
+    int getBoughttemplate();
+    int getCertlink();
+    int getCerttemplate();
+    int getContrast();
+    int getCost();
+    int[] getCountco();
+    int[] getCountobj();
+    int getId();
+    String[] getIop();
+    int getManhead();
+    int getManhead2();
+    int getManwear();
+    int getManwear2();
+    int getManwear3();
+    int getManwearyoff();
+    boolean getMembers();
+    int getModel();
+    String getName();
+    String[] getOp();
+    RSIterableNodeHashTable getParams();
+    int getPlaceholderlink();
+    int getPlaceholdertemplate();
+    short[] getRecol_d();
+    short[] getRecol_s();
+    int getResizex();
+    int getResizey();
+    int getResizez();
+    short[] getRetex_d();
+    short[] getRetex_s();
+    int getShiftclickindex();
+    int getStackable();
+    boolean getStockmarket();
+    int getTeam();
+    int getWomanhead();
+    int getWomanhead2();
+    int getWomanwear();
+    int getWomanwear2();
+    int getWomanwear3();
+    int getWomanwearyoff();
+    int getXan2d();
+    int getXof2d();
+    int getYan2d();
+    int getYof2d();
+    int getZan2d();
+    int getZoom2d();
+}

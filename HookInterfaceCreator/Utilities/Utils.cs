@@ -34,7 +34,7 @@ namespace HookInterfaceCreator.Utilities
                 ("I") => "Integer",
                 ("F") => "Float",
                 ("java/lang/String") => "String",
-                _ => descriptor,
+                _ => descriptor.Split("/").Last(),
             };
         }
 
@@ -51,18 +51,27 @@ namespace HookInterfaceCreator.Utilities
                 ("I") => "int",
                 ("F") => "float",
                 ("java/lang/String") => "String",
-                _ => descriptor,
+                _ => descriptor.Split("/").Last(),
             };
         }
 
         public static string GetJavaArrayString(int count, string type) => $"{type}".Add("[]", count);
 
-        public static string StripDescriptorType(string descriptor) => descriptor.Contains(";") ? descriptor.Substring(1, descriptor.Length) : descriptor;
+        public static string StripDescriptorType(string descriptor)
+        {
+            string tempDescriptor = descriptor;
+            if (descriptor.Contains(";"))
+            {
+                tempDescriptor = descriptor.Substring(1);
+                tempDescriptor = tempDescriptor.Substring(0, tempDescriptor.Length - 1);
+            }
+            return tempDescriptor;
+        }
 
         public static string StripArray(string descriptor)
         {
             int count = descriptor.Count(c => c == '[');
-            return descriptor.Substring(count, descriptor.Length);
+            return count > 0 ? descriptor.Substring(count) : descriptor;
         }
     }
 }
